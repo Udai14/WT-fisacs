@@ -1,0 +1,14 @@
+table {
+    border: solid 1pt black;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+td, th {
+    border: solid 1pt black;
+    padding: 10px;
+}
+h1 {
+    text-align: center;
+}

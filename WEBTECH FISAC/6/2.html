@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Size Change</title>
+    <style>
+        #text {
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+    <script>
+        function enlargeFont() {
+            document.getElementById("text").style.fontSize = "24px";
+        }
+
+        function resetFont() {
+            document.getElementById("text").style.fontSize = "16px";
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Hover over the text to change its size:</h1>
+    <p id="text" onmouseover="enlargeFont()" onmouseout="resetFont()">
+        Move your mouse over this text to enlarge it.
+    </p>
+
+</body>
+</html>

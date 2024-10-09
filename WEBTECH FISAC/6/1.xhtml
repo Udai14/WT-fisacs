@@ -1,0 +1,47 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Fibonacci and Squares</title>
+    <script type="text/javascript">
+        // <![CDATA[
+        function generateFibonacci() {
+            let n = prompt("Enter a number to get the first n Fibonacci numbers:");
+            n = parseInt(n);
+            if (isNaN(n) || n <= 0) {
+                alert("Please enter a valid positive number.");
+                return;
+            }
+
+            let fibonacci = [0, 1];
+            for (let i = 2; i < n; i++) {
+                fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+            }
+            document.getElementById("content").innerHTML = "The first " + n + " Fibonacci numbers are: " + fibonacci.slice(0, n).join(", ");
+        }
+
+        function generateSquares() {
+            let n = prompt("Enter a number to create a table of squares from 1 to n:");
+            n = parseInt(n);
+            if (isNaN(n) || n <= 0) {
+                alert("Please enter a valid positive number.");
+                return;
+            }
+
+            let tableHTML = "<table border='1'><tr><th>Number</th><th>Square</th></tr>";
+            for (let i = 1; i <= n; i++) {
+                tableHTML += "<tr><td>" + i + "</td><td>" + (i * i) + "</td></tr>";
+            }
+            tableHTML += "</table>";
+            document.getElementById("content").innerHTML = tableHTML;
+        }
+        // ]]>
+    </script>
+</head>
+<body>
+    <h1>Fibonacci and Squares</h1>
+    <button onclick="generateFibonacci()">Generate Fibonacci</button>
+    <button onclick="generateSquares()">Generate Squares Table</button>
+    <div id="content"></div>
+</body>
+</html>

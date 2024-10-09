@@ -1,0 +1,11 @@
+table {
+    border: solid 1pt black;
+}
+th {
+    border: solid 1pt black;
+    padding: 5px 5px;
+}
+td {
+    border: solid 1pt black;
+    padding: 5px 5px;
+}

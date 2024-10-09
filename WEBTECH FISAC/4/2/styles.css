@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 350px;
+}
+
+.contact-info p {
+    font-size: 23px;
+    font-weight: bold;
+    color: #000000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* make a gradient background top to bottom */
+    background: linear-gradient(to bottom, #f4f4f4 0%, #ced6e9 100%);
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #666666;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #cccccc;
+    color: #000000;
+}
+
+main {
+    padding: 20px;
+    background-color: #1d1d1b;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.about-image img {
+    height: 95%;
+    margin-left: 15%;
+    border: 5px solid #ffffff;
+}
+
+.about-info {
+    max-width: 800px;
+    /* Gradient background color radial from top left corner */
+    background: radial-gradient(circle, #bcbcbc 0%, #1d1d1b 100%);
+    /* border: 10px solid #393939; */
+    color: #ffffff;
+}
+
+.about-head h2 {
+    padding: 10px;
+    background-color: #ffcc00;
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-content {
+    padding: 20px;
+}
+
+.about-info h3 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.about-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service {
+    width: 23%;
+    background-color: #f4f4f4;
+    color: #ffffff;
+    text-align: left;
+    position: relative;
+    /* border: 3px solid #ffffff; */
+    margin-bottom: 20px;
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+}
+
+.service-info img {
+    width: 50%;
+    float: right;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.service-info {
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #000000;
+    position: relative;
+    text-align: left;
+}
+
+.service-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.service-info p {
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+/* .read-more {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: #ffcc00;
+    color: #000;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #000000;
+    border-radius: 0;
+    display: inline-block;
+    transform: skewX(-20deg);
+}
+
+.read-more:hover {
+    color: #000;
+} */
+
+.service-head h3 {
+    background-color: #ffcc00;
+    color: #000000;
+    padding: 10px;
+    margin: 0;
+}
+
+marquee {
+    color: #ffcc00;
+    padding: 10px;
+    margin: 0;
+}

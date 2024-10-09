@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone number extractor</title>
+    <script>
+        function extractPhoneNumber() {
+            const input = document.getElementById("phoneInput").value;
+            const areaCode = input.split(" ")[0].replace('(','').replace(')','');
+            const sevenDigitNumber = input.split(" ")[1].split("-")[0] + input.split(" ")[1].split("-")[1];
+            document.getElementById("areaCode").value = areaCode;
+            document.getElementById("sevenDigit").value = sevenDigitNumber;
+        }
+    </script>
+</head>
+<body>
+    <h1>Phone Number Extractor</h2>
+    <input type="text" id="phoneInput" placeholder="(555) 555-5555" />
+    <button onclick="extractPhoneNumber()">Extract</button>
+    <br/><br/>
+    <label for="areaCode">Area Code:</label>
+    <input type="text" id="areaCode" readonly />
+    <br/><br/>
+    <label for="sevenDigit">Seven-Digit Number:</label>
+    <input type="text" id="sevenDigit" readonly />
+</body>
+</html>
